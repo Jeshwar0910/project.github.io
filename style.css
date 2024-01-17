@@ -1,3 +1,11 @@
+@keyframes zoom-in-zoom-out {
+  0% {
+    transform: scale(0.5, 0.5);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
 /*Home Page*/
 * {
   margin: 0px;
@@ -144,6 +152,7 @@
 .gallery a img {
   width: 400px;
   border: 4px solid black;
+  animation: zoom-in-zoom-out 1s;
 }
 .gallery:hover {
   border: 5px solid skyblue;
